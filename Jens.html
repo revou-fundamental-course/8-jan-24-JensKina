@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi Jens</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="welcome-container">
+        <h2 class="heading_atas">Youkoso</h2>
+        <p class="subjudul">Terima Kasih telah mengunjungi situs Rajendra. Silahkan coba Kalkulator Persegi Saya.</p> 
+    </div>
+
+    <div class="form-container">
+        <h2>Formulir Biodata</h2>
+        <form id="biodataForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status" required>
+        </form>
+    </div>
+
+    <div >
+        <h2 class="mencoba">Silahkan Mencoba Kalkulator Persegi </h2>
+    </div>
+
+
+
+
+    <div class="square"></div>
+    <div class="container">
+        <h2>Kalkulator Persegi</h2>
+        <form>
+            <label for="sisi">Masukkan panjang sisi:</label>
+            <input type="number" id="sisi" placeholder="Panjang sisi" required>
+            <br>
+            <button type="button" onclick="hitungLuas()" class="button1">Hitung Luas</button>
+            <button type="button" onclick="hitungKeliling()" class="button1">Hitung Keliling</button>
+        </form>
+        <div id="hasil">
+            <p>Luas: <span id="luas"></span></p>
+            <p>Keliling: <span id="keliling"></span></p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button id="submitButton" onclick="submitForm()" class="button2">Submit</button>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
